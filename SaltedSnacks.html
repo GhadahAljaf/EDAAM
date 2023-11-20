@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Products</title>
+        <link rel="stylesheet" href="Products.css"> 
+        <link rel="icon" href="./images/EDAAM icon.png" type="image/png">
+        <link rel="stylesheet" href="cart.css">
+        <script src="SaltedSnacks.js"> </script>
+    </head>
+    <body>
+
+        <div class="navbar">
+            <img src="edaam.png" class="logo"> 
+            <a href="index1.html#HOME">Home</a></li>
+            <a href="index1.html#ABOUT">About</a>
+            <a href="index1.html#PRODUCTS">Products</a>
+            <a href="index1.html#SERVICES">Services</a>
+            <a href="brands.html" class="right"> Support </a>
+            <a href="index2.html"> Log in </a>
+            <a href="cart.html" class="right">Shopping Cart</a>
+          </div>
+    
+
+        <div class="price-range-filter">
+            <label for="min-price" style="font-size: 20px;">Min Price: </label>
+            <input type="number" id="min-price" value="0">
+        
+            <label for="max-price" style="font-size: 20px;">Max Price: </label>
+            <input type="number" id="max-price" value="4">
+        
+            <button onclick="filterByPrice()">Filter</button>
+        </div>
+        
+
+        <section class="products">
+            <h3>Salted Snacks</h3>
+            <div class="all-products">
+                <div class="product">
+                    <img src="./Pictures/Amwaj.jpg" alt="Amwaj chips"/>
+                    <div class="product-info">
+                        <h4 class="product-title">Amwaj potato chips
+                        </h4>
+                        <p class="product-price">4.00 AED</p>
+                        <button class="product-btn" onclick="addToCart('Amwaj potato chips', 4.00, './Pictures/Amwaj.jpg')">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="./Pictures/sohar.jpg" alt="sohar chips">
+                    <div class="product-info">
+                        <h4 class="product-title">Sohar chips
+                        </h4>
+                        <p class="product-price">1.00 AED</p>
+                        <button class="product-btn" onclick="addToCart('sohar chips', 1.00, './Pictures/sohar.jpg')">Add to cart</button>
+    
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./Pictures/salad.jpg" alt="salad Chips">
+                    <div class="product-info">
+                        <h4 class="product-title">Salad chips
+                        </h4>
+                        <p class="product-price">3.50 AED</p>
+                        <button class="product-btn" onclick="addToCart('salad chips', 3.50 , './Pictures/salad.jpg')">Add to cart</button>
+    
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./Pictures/oman.jpg" alt="Oman chips">
+                    <div class="product-info">
+                        <h4 class="product-title">Oman chips
+                            </h4>
+                        <p class="product-price">1.50 AED</p>
+                        <button class="product-btn" onclick="addToCart('Oman chips', 1.50, './Pictures/oman.jpg')">Add to cart</button>
+    
+                    </div>
+                </div>
+                   <div class="product">
+                    <img src="./Pictures/crackers.jpg" alt="Qrakers chips">
+                    <div class="product-info">
+                        <h4 class="product-title">Qrakers chips
+                            </h4>
+                        <p class="product-price">3.00 AED</p>
+                        <button class="product-btn" onclick="addToCart('Qrakerschips', 3.00 , './Pictures/crackers.jpg')">Add to cart</button>
+    
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./Pictures/Smithscheese.jpg" alt="Smiths square crisps">
+                    <div class="product-info">
+                        <h4 class="product-title">Smiths square crisps
+                            </h4>
+                        <p class="product-price">1.50 AED</p>
+                        <button class="product-btn" onclick="addToCart('Smiths square crisps', 1.50, './Pictures/Smithscheese.jpg')">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./Pictures/Vchips.jpg" alt="Smiths salt and vinegar chipsticks">
+                    <div class="product-info">
+                        <h4 class="product-title">Smiths salt and vinegar chipsticks
+                            </h4>
+                        <p class="product-price">3.50 AED</p>
+                        <button class="product-btn" onclick="addToCart('Smiths salt and vinegar chipsticks', 3.50 , './Pictures/Vchips.jpg')">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./Pictures/Pofak.jpg" alt="Pofak">
+                    <div class="product-info">
+                        <h4 class="product-title">Pofak chips
+                            </h4>
+                        <p class="product-price">0.50 AED</p>
+                        <button class="product-btn" onclick="addToCart('Pofak chips', 0.50, './Pictures/Pofak.jpg')">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./Pictures/Baz.jpg" alt="Baz Chips">
+                    <div class="product-info">
+                        <h4 class="product-title">Baz chips
+                            </h4>
+                        <p class="product-price"> 0.70 AED</p>
+                        <button class="product-btn" onclick="addToCart('Baz Chips', 0.70, './Pictures/Baz.jpg')">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+           
+             
+            
+        </section>
+
+        
+
+
+       
+    </body>
+</html>

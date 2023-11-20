@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sweet Snacks</title>
+        <link rel="icon" href="./images/EDAAM icon.png" type="image/png">
+        <link rel="stylesheet" href="Products.css">
+        <script src="SweetSnacks.js"></script>
+        <style>
+            .search-container {
+            text-align: center;
+            margin-bottom: 20px;
+            }   
+
+            .search-container input {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <img src="./images/EDAAM .png" class="logo"> 
+            <a href="index1.html#HOME">Home</a></li>
+            <a href="index1.html#ABOUT">About</a>
+            <a href="index1.html#PRODUCTS">Products</a>
+            <a href="index1.html#SERVICES">Services</a>
+            <a href="brands.html" class="right"> Support </a>
+            <a href="index2.html"> Log in </a>
+            <a href="cart.html" class="right">Shopping Cart</a>
+          </div>
+    
+    
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for snacks" oninput="searchProducts()">
+        </div>
+
+        <section class="products">
+            <h3>Sweet Snacks</h3>
+            <div class="all-products">
+                <div class="product">
+                    <img src="./Snacks/tamrah.jpg" alt="Tamrah"/>
+                    <div class="product-info">
+                        <h4 class="product-title">Tamrah Assorted Chocolate Date
+                        </h4>
+                        <p class="product-price">39.00 AED</p>
+                        <button class="product-btn" onclick="addToCart('Tamrah', 39.00, './Snacks/tamrah.jpg')">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="./Snacks/Alnasma.jpg" alt="Alnassma whole milk Chocolate">
+                    <div class="product-info">
+                        <h4 class="product-title">Alnassma Whole Camel milk Chocolate
+                        </h4>
+                        <p class="product-price">29.00 AED</p>
+                        <button class="product-btn" onclick="addToCart('Alnassma', 29.00, './Snacks/Alnasma.jpg')">Add to cart</button>
+    
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./Snacks/bayara.jpg" alt="Bayara Milk Chocolate Dates with Almond">
+                    <div class="product-info">
+                        <h4 class="product-title">Bayara Milk Chocolate Dates with Almond
+                        </h4>
+                        <p class="product-price">29.25 AED</p>
+                        <button class="product-btn" onclick="addToCart('Bayara', 29.25, './Snacks/bayara.jpg')">Add to cart</button>
+                       
+    
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./Snacks/hazelnut.jpg" alt="HAZELNUT DARK CHOCOLATE COATED">
+                    <div class="product-info">
+                        <h4 class="product-title">Hazelnut Dark Chocolate Coated
+                            </h4>
+                        <p class="product-price">11.50 AED</p>
+                        <button class="product-btn" onclick="addToCart('Hazelnut Dark Chocolate coated ',11.50, './Snacks/hazelnut.jpg')">Add to cart</button>
+    
+                    </div>
+                </div>
+                   <div class="product">
+                    <img src="./Snacks/Raspberry.jpg" alt="Raspberry & Dark Choco Croquant Bar">
+                    <div class="product-info">
+                        <h4 class="product-title">Raspberry & Dark Choco Croquant Bar
+                            </h4>
+                        <p class="product-price">29.50 AED</p>
+                        <button class="product-btn" onclick="addToCart('Raspberry & Dark Choco Croquant Bar',29.50, './Snacks/Raspberry.jpg')">Add to cart</button>
+    
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./Snacks/chocolate.jpg" alt="Coconut Chips with Chocolate Flavor">
+                    <div class="product-info">
+                        <h4 class="product-title">Coconut Chips with Chocolate Flavor mini
+                            </h4>
+                        <p class="product-price">15.00 AED</p>
+                        <button class="product-btn" onclick="addToCart('Coconut Chips with Chocolate Flavor mini',15.00, './Snacks/chocolate.jpg')">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./Snacks/Baklava.jpg" alt="Al Rifai Honey Baklava">
+                    <div class="product-info">
+                        <h4 class="product-title">Al Rifai Honey Baklava
+                            </h4>
+                        <p class="product-price">90.00 AED</p>
+                        <button class="product-btn" onclick="addToCart('Al Rifai Honey Baklava',90.00, './Snacks/Baklava.jpg')">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./Snacks/halwa.jpg" alt="Halwa Rahesh">
+                    <div class="product-info">
+                        <h4 class="product-title">Halwa Rahesh
+                            </h4>
+                        <p class="product-price">25.00 AED</p>
+                        <button class="product-btn" onclick="addToCart('Halwa Rahesh',25.00, './Snacks/halwa.jpg')">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./Snacks/mamoul.jpg" alt="Mamoul Date Filled Shortbread Biscuits">
+                    <div class="product-info">
+                        <h4 class="product-title">Mamoul Date Filled Shortbread Biscuits
+                            </h4>
+                        <p class="product-price"> 30.00 AED</p>
+                        <button class="product-btn" onclick="addToCart('Mamoul Date Filled Shortbread Biscuits',30.00, './Snacks/mamoul.jpg')">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

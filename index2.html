@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--EDAAM WEB-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>EDAAM</title>
+    <link rel="icon" href="./images/EDAAM icon.png" type="image/png">
+
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Alkatra' rel='stylesheet'>
+
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="./images/EDAAM .png">
+            </div>
+
+        <ul>
+            <li><a href="index1.html#HOME">HOME</a></li>
+            <li><a href="index1.html#ABOUT">ABOUT</a></li>
+            <li><a href="index1.html#PRODUCTS">PRODUCTS</a></li>
+            <li><a href="index1.html#SERVICES">SERVICES</a></li>
+            <li><a href="brands.html">SUPPORT</a></li>
+        </ul>
+
+        <div class="icon">
+            <a href="index2.html"><i class="fa-solid fa-user"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </nav>
+    </section>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="index1.html">
+                <h1>Create Account</h1>
+                
+                <p>Enter your data </p>
+                <input type="text" placeholder="Name" required/>
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+          <br />
+                <a href="index1.html"><button>Sign Up</button></a>
+          
+            </form>
+      </div>
+      
+      
+        <div class="form-container sign-in-container">
+            <form action="index1.html">
+                <h1>Sign in</h1>
+                
+                <p>use your account</p>
+                <input type="email" placeholder="Email" required/>
+                <input type="password" placeholder="Password" required/>
+          <br />
+                <a href="index1.html"><button>Sign In</button></a>
+            </form>
+        </div>
+      
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>please login with<br /> your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Nice to see you for the fist time!</h1>
+                    <p>Enter your personal details and start the journey </p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>

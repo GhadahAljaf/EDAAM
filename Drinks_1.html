@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beverages</title>
+        <link rel="icon" href="edaam.png" type="image/png">
+        <link rel="stylesheet" href="Products.css">
+        <script src="Drinks.js"></script>
+        <style>
+        .filter-buttons {
+            text-align: center;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd; 
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+            background-color: #f9f9f9; 
+            width: 40% 
+        }
+
+        .filter-btn {
+            background-color: rgb(96, 174, 96);
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .filter-btn:hover {
+            background-color: #45a049; 
+        }
+
+        .filter-btn.active {
+            background-color: #216837; 
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <img src="edaam.png" class="logo"> 
+            <a href="index1.html#HOME">Home</a></li>
+            <a href="index1.html#ABOUT">About</a>
+            <a href="index1.html#PRODUCTS">Products</a>
+            <a href="index1.html#SERVICES">Services</a>
+            <a href="brands.html" class="right"> Support </a>
+            <a href="index2.html"> Log in </a>
+            <a href="cart.html" class="right">Shopping Cart</a>
+          </div>
+    
+
+        <div class="filter-buttons">
+            <button class="filter-btn" onclick="filterProducts('all')">All</button>
+            <button class="filter-btn" onclick="filterProducts('large')">Large</button>
+            <button class="filter-btn" onclick="filterProducts('medium')">Medium</button>
+            <button class="filter-btn" onclick="filterProducts('small')">Small</button>
+        </div>
+            
+        <section class="products">
+            <h3>Beverages</h3>
+            <div class="all-products">
+                <div class="product" data-size="large">
+                    <img src="./Juices/Mango.nectar.png" alt="Mango nectar"/>
+                    <div class="product-info">
+                        <h4 class="product-title">Mango nectar
+                        </h4>
+                        <p class="product-price">11.50 AED</p>
+                        <button class="product-btn" onclick="addToCart('Mango nectar', 11.50, './Juices/Mango.nectar.png')">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product" data-size="small">
+                    <img src="./Juices/mixedfruits.jpg" alt="mixed fruits">
+                    <div class="product-info">
+                        <h4 class="product-title">Mixed fruits juice
+                        </h4>
+                        <p class="product-price">1.95 AED</p>
+                        <button class="product-btn" onclick="addToCart('Mixed fruits juice', 1.95, './Juices/mixedfruits.jpg')">Add to cart</button>
+                    </div> 
+                </div>
+                <div class="product" data-size="large">
+                    <img src="./Juices/orangejuice.png" alt="orange juice">
+                    <div class="product-info">
+                        <h4 class="product-title">Orange juice
+                        </h4>
+                        <p class="product-price">7.50 AED</p>
+                        <button class="product-btn" onclick="addToCart('Orange juice', 7.50, './Juices/orangejuice.png')">Add to cart</button>
+    
+                    </div>
+                </div>
+                <div class="product" data-size="small">
+                    <img src="./Juices/Mango.jpg" alt="Mango juice">
+                    <div class="product-info">
+                        <h4 class="product-title">Mango juice
+                            </h4>
+                        <p class="product-price">2.70 AED</p>
+                        <button class="product-btn" onclick="addToCart('Mango juice', 2.70, './Juices/Mango.jpg')">Add to cart</button>
+                    </div>
+                </div>
+                   <div class="product" data-size="medium">
+                    <img src="./Juices/Beetroot.png" alt="Beetroot & Blackcurrant juice">
+                    <div class="product-info">
+                        <h4 class="product-title">Beetroot and Blackcurrant juice
+                            </h4>
+                        <p class="product-price">4.00 AED</p>
+                        <button class="product-btn" onclick="addToCart('Beetroot and Blackcurrant juice', 4.00, './Juices/Beetroot.png')">Add to cart</button>
+    
+                    </div>
+                </div>
+                <div class="product" data-size="small">
+                    <img src="./Juices/kiwi.jpg" alt="kiwi juice">
+                    <div class="product-info">
+                        <h4 class="product-title">Kiwi juice
+                            </h4>
+                        <p class="product-price">2.85 AED</p>
+                        <button class="product-btn" onclick="addToCart('Mango nectar', 11.50, './Juices/kiwi.jpg')">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product" data-size="large">
+                    <img src="./Juices/pineapple.png" alt="pineapple juice">
+                    <div class="product-info">
+                        <h4 class="product-title">Pineapple juice
+                            </h4>
+                        <p class="product-price">9.50 AED</p>
+                        <button class="product-btn" onclick="addToCart('Pineapple juice',9.50, './Juices/pineapple.png')">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product" data-size="large">
+                    <img src="./Juices/apple.jpg" alt="apple juice">
+                    <div class="product-info">
+                        <h4 class="product-title">Apple juice
+                            </h4>
+                        <p class="product-price">9.95</p>
+                        <button class="product-btn" onclick="addToCart('Apple juice', 9.95, './Juices/apple.jpg')">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product" data-size="medium">
+                    <img src="./Juices/green.juice.jpg" alt="Green Juice">
+                    <div class="product-info">
+                        <h4 class="product-title">Green Juice
+                            </h4>
+                        <p class="product-price"> 12.00 AED</p>
+                        <button class="product-btn" onclick="addToCart('Green Juice', 12.00, './Juices/green.juice.jpg')">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

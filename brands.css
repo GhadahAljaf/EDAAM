@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+
+.navbar_brands{
+   
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Center the options */
+    margin-right: 20px;
+    margin-top: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.navbar_brands a {
+    margin: 0 20px; /* Add some margin between the categories */
+    text-decoration: none;
+}
+
+.logo_brands {
+    width: 200px; /* Adjust the size of the logo as needed */
+    height: 200px;
+    border-radius: 50%; /* Make the image rounded */
+    margin-bottom: 5px; /* Add some space between the image and text */
+}
+
+
+.brands-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Center brands vertically */
+    padding: 20px;
+    text-decoration: none; 
+ 
+}
+
+.brand {
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally within the brand box */
+}
+
+.brand img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.brand a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    display: block;
+}
+
+.wrapper {
+    height: 30vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+  
+  .title {
+    width: 21ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  .support-local {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    font-size:large;
+    color: #333;
+    margin: 10px 10px 10px 10px;
+}
+
+#customMessage {
+    background-color: #f0f8ff; /* Light background for the message */
+    padding: 20px;
+    margin-top: 30px; /* Space above the message section */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: center; /* Center-align the text */
+}
+
+
+#customMessage h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.4em; /* Slightly smaller font size for heading */
+}
+
+#customMessage p {
+    color: #555;
+    font-size: 1em; /* Standard reading size for paragraph */
+    line-height: 1.4; /* Adjusted line height */
+    color:rgb(155, 88, 88); 
+}

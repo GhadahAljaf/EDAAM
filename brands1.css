@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #7ac0bd;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#businessList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the cards */
+}
+
+.business-card {
+    width: 20%; /* 5 columns per row */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Adjusted border-radius */
+    padding: 10px;
+    margin: 10px; /* Space between cards */
+    text-align: center; /* Center content inside each card */
+}
+
+.business-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Make the image round */
+    margin-bottom: 10px;
+}
+
+.business-card h2 {
+    color: rgb(3, 3, 3);
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.business-card p {
+    color: #555;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.business-profile {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.business-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.business-profile h3 {
+    color: #333;
+    margin-top: 10px;
+}
+
+#customMessage {
+    background-color: #f0f8ff; /* Light background for the message */
+    padding: 20px;
+    margin-top: 30px; /* Space above the message section */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: center; /* Center-align the text */
+}
+
+
+#customMessage h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.4em; /* Slightly smaller font size for heading */
+}
+
+#customMessage p {
+    color: #555;
+    font-size: 1em; /* Standard reading size for paragraph */
+    line-height: 1.4; /* Adjusted line height */
+    color:rgb(155, 88, 88); 
+}
